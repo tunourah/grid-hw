@@ -294,3 +294,72 @@ gap: 20%;
     font-weight: 700;
 } 
 
+@media screen and (min-width: 150px) and (max-width: 480px) {
+    body {
+        margin-top: 20px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr; /* Stack all items vertically */
+        grid-template-rows: auto;
+        gap: 10px; /* Add some space between the items */
+    }
+
+    .item1, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11 {
+        grid-column: 1 / -1; /* Each item takes up the full width */
+    }
+
+    .item1 {
+        grid-template-columns: 1fr; /* Stack content inside item1 */
+        text-align: center;
+    }
+
+    .item1-text {
+        width: 100%; /* Make text container full width */
+        margin: 0;
+    }
+
+    .item1-img img {
+        max-width: 100%; /* Make sure images are responsive */
+        height: auto;
+    }
+
+    .item5 {
+        grid-template-columns: 1fr; /* Stack content inside item5 */
+        text-align: center;
+    }
+
+    .item6 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .item7, .item8, .item9, .item10, .item11 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .item9 p, .item10 p {
+        width: 100%; /* Make text container full width */
+        font-size: 0.9em;
+    }
+
+    .item10 img {
+        width: 50%; /* Adjust image size */
+        height: auto;
+    }
+
+    .item6 button, .tag {
+        width: 80%; /* Adjust button and tag width */
+        padding: 8px;
+        border-radius: 15px;
+        font-size: 12px;
+    }
+
+    .header {
+        width: 80vw;
+        height: auto;
+        border-radius: 50%;
+    }
+}
