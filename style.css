@@ -201,6 +201,7 @@ color: #fff;
 .tag {
     width: 15%;
     padding: 10px;
+    margin: 10px;
     border-radius: 30%;
     background-color: coral;
     font-size: 10px;
