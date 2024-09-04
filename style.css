@@ -67,6 +67,7 @@ div {
     display: grid;
     place-content: center;
     text-align: center;
+    background-color: #f7f8f9;
 }
 .item3 a {
     color: #27b9c2;
